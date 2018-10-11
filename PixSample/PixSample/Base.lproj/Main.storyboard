@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PixSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pix" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-NC-Ptx">
+                                <rect key="frame" x="142.5" y="140" width="129" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="DFT-bb-u6P"/>
+                                    <constraint firstAttribute="height" constant="129" id="Ndg-9Q-KRh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTINUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X70-xW-fuo">
+                                <rect key="frame" x="32" y="365" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A4D-pz-tNW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN WITH FACEBOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-11-c1y">
+                                <rect key="frame" x="32" y="430" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0Vg-xd-hHf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.19451478119999999" green="0.59968537089999996" blue="0.96895736460000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S7L-11-c1y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Nb-Hu-yBa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X70-xW-fuo" secondAttribute="trailing" constant="32" id="GUm-Mq-I7M"/>
+                            <constraint firstItem="S7L-11-c1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Gdg-1P-1iI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7L-11-c1y" secondAttribute="trailing" constant="32" id="JRu-6b-EW2"/>
+                            <constraint firstItem="eZ3-NC-Ptx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="JYI-xi-zRi"/>
+                            <constraint firstItem="X70-xW-fuo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="M1V-dm-y4H"/>
+                            <constraint firstItem="S7L-11-c1y" firstAttribute="top" secondItem="X70-xW-fuo" secondAttribute="bottom" constant="17" id="qaM-sM-8IA"/>
+                            <constraint firstItem="eZ3-NC-Ptx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s9R-Lc-iVE"/>
+                            <constraint firstItem="X70-xW-fuo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="waC-Gc-SdP"/>
+                            <constraint firstItem="X70-xW-fuo" firstAttribute="top" secondItem="eZ3-NC-Ptx" secondAttribute="bottom" constant="96" id="zte-w6-Zff"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FacebookSignInBar" destination="S7L-11-c1y" id="Msn-r7-Dak"/>
+                        <outlet property="GoogleSignInBar" destination="X70-xW-fuo" id="38v-ed-D8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="18.75"/>
+        </scene>
+        <!--Screen View Controller-->
+        <scene sceneID="fU5-H3-7fF">
+            <objects>
+                <viewController id="Vp3-wW-4Td" customClass="OTPScreenViewController" customModule="PixSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZw-vb-4Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pix" translatesAutoresizingMaskIntoConstraints="NO" id="695-b4-13o">
+                                <rect key="frame" x="142.5" y="140" width="129" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="DuX-O0-7JD"/>
+                                    <constraint firstAttribute="width" constant="129" id="cNb-jT-3WB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="695-b4-13o" firstAttribute="top" secondItem="SQG-zF-LhY" secondAttribute="top" constant="96" id="fJK-rU-6OC"/>
+                            <constraint firstItem="695-b4-13o" firstAttribute="centerX" secondItem="SQG-zF-LhY" secondAttribute="centerX" id="rDP-Ra-Vpo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SQG-zF-LhY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xed-il-wnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692.75362318840587" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pix" width="180" height="180"/>
+    </resources>
+</document>
